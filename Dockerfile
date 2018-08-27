@@ -26,3 +26,6 @@ RUN unzip bowtie2-2.3.4.1-linux-x86_64.zip
 RUN cp /opt/fastq_screen_v0.12.0/fastq_screen /usr/local/bin
 RUN cp /opt/bowtie2-2.3.4.1-linux-x86_64/bowtie* /usr/local/bin
 
+RUN apt-get install libgd-perl
+RUN perl -MCPAN -e 'install GD::Graph'
+
